@@ -1,69 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio JMG S.A.C.</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JMG S.A.C - Industrias y Servicios Generales">
+  <meta name="author" content="JMG S.A.C">
+  <title>JMG S.A.C - Industrias y Servicios Generales</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Tipografía elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <h1>INDUSTRIAS - SERVICIOS GENERALES</h1>
-      <p>REALIZA TUS PROYECTOS CON NOSOTROS</p>
-      <a href="#empresa" class="btn">Conócenos</a>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container-fluid flex-column">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#" data-bs-target="#heroCarousel" data-bs-slide-to="0">Instalación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-bs-target="#heroCarousel" data-bs-slide-to="1">Seguridad</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-bs-target="#heroCarousel" data-bs-slide-to="2">Producción</a></li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
+</header>
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
 
-  <section id="empresa" class="section">
-    <h2>Empresa</h2>
-    <p>Somos una empresa de capital peruano con personal calificado en diversos servicios. Especializados en proyectos, fabricación en acero inoxidable y metales para sectores como metal mecánico, construcción, transporte, minería y decoración.</p>
-    <h3>Visión</h3>
-    <p>Ser reconocidos como la mejor empresa peruana especializada en ejecución de proyectos, comercialización, fabricación e importación de acero y metales.</p>
-    <h3>Misión</h3>
-    <p>Brindar soluciones integrales con calidad, generando empleo y contribuyendo al desarrollo del país.</p>
-  </section>
+<!-- Carrusel -->
 
-  <section id="servicios" class="section grid">
-    <h2>Servicios</h2>
-    <div class="card">Estructuras Metálicas</div>
-    <div class="card">Obras Civiles</div>
-    <div class="card">Sistema Drywall</div>
-    <div class="card">Vidrios y Cristales</div>
-    <div class="card">Coberturas Metálicas</div>
-    <div class="card">Paneles Termoacústicos</div>
-    <div class="card">Carpintería Metálica</div>
-    <div class="card">Tijerales</div>
-    <div class="card">Techos Parabólicos</div>
-    <div class="card">Placa Colaborante</div>
-  </section>
+  <!-- Indicadores opcionales -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
 
-  <section id="productos" class="section">
-    <h2>Comercialización</h2>
-    <h3>Acero Inoxidable</h3>
-    <p>Planchas, tubos decorativos, cuadrados y redondos en diversos acabados y calibres.</p>
-    <h3>Acero al Carbono</h3>
-    <p>Planchas laminadas en frío/caliente, tubos ornamentales, barras de construcción.</p>
-  </section>
+  <div class="carousel-inner">
+    <div class="carousel-item active" id="slide1">
+      <img src="./assets/imagenes/1.svg" class="d-block w-100 full-height" alt="Imagen de fondo JMG">
+      <div class="carousel-caption central-text">
+        <h1>JMG S.A.C</h1>
+        <p>Instalación Eléctrica</p>
+      </div>
+    </div>
 
-  <section id="clientes" class="section">
-    <h2>Clientes</h2>
-    <ul>
-      <li>RM Promotora Inmobiliaria</li>
-      <li>Ciudaris Inmobiliaria</li>
-      <li>PRECOR</li>
-      <li>CONSSOLIDA Construcción Integral</li>
-      <li>Cavassa Arq.Studio</li>
-      <li>PDK Produktiva</li>
-      <li>Brazil Grupo Inmobiliario</li>
-    </ul>
-  </section>
+    <div class="carousel-item" id="slide2">
+      <img src="./assets/imagenes/2.svg" class="d-block w-100 full-height" alt="Imagen de fondo JMG">
+      <div class="carousel-caption central-text">
+        <h1>JMG S.A.C</h1>
+        <p>Seguridad Industrial</p>
+      </div>
+    </div>
 
-  <footer id="contacto" class="footer">
-    <h2>Contacto</h2>
-    <p>Ind_jmg@hotmail.com | proyectos@grupo-jmg.com</p>
-    <p>Tel: 958 035 294 - 960 208 323</p>
-    <p>Calle Montevideo Mz. 44 Lte 30 - Buenos Aires de Villa Chorrillos</p>
-  </footer>
+    <div class="carousel-item" id="slide3">
+      <img src="./assets/imagenes/3.svg" class="d-block w-100 full-height" alt="Imagen de fondo JMG">
+      <div class="carousel-caption central-text">
+        <h1>JMG S.A.C</h1>
+        <p>Producción & Mantenimiento</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controles laterales -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+
+
+  </div>
+</div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

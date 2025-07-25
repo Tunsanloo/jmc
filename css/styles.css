@@ -1,68 +1,30 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* HERO */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/img/banner.jpg') center/cover;
+.full-height {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
+  object-fit: cover;
 }
 
-.hero-content h1 {
+.central-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.central-text h1 {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-.hero-content p {
+.central-text p {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.btn {
-  background: orange;
-  color: white;
-  padding: 0.8rem 1.2rem;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-/* SECTIONS */
-.section {
-  padding: 3rem 2rem;
-}
-
-.section h2 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-/* Grid cards */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1rem;
-}
-
-.card {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-/* Footer */
-.footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 2rem;
+  color: #fff;
 }
